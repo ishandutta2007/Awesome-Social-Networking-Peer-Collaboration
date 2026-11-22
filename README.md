@@ -5,10 +5,13 @@
 # 🌐 Awesome Social Networking & Peer Collaboration 🤝
 
 <p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Social-Networking-Peer-Collaboration/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Social-Networking-Peer-Collaboration?style=social&color=white" alt="Repo Stars"></a>
-  <a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Social-Networking-Peer-Collaboration/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Social-Networking-Peer-Collaboration/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 > **A definitive, curated directory of SaaS community hubs, federated social networks, encrypted peer-to-peer messaging platforms, real-time team collaboration tools, and wearable AI companions.** 🚀
@@ -23,6 +26,8 @@ Whether you are building a creator community, deploying enterprise team communic
 - [☁️ SaaS / Hosted Platforms](#️-saas--hosted-platforms)
 - [💻 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🏗️ Architectural Frameworks & Patterns](#️-architectural-frameworks--patterns)
+- [📈 Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
 - [🤝 How to Contribute](#-how-to-contribute)
 - [⚠️ Disclaimer](#️-disclaimer)
 
@@ -104,6 +109,24 @@ For architects and engineering teams designing modern collaborative digital spac
 3. **Local-First & P2P Data Channels**:
    - Use **[Syncthing](https://github.com/syncthing/syncthing)** or **[SimpleX Chat](https://github.com/simplex-chat/simplex-chat)** to eliminate metadata tracking and avoid central database bottlenecks.
    - Employ local-first AI bridges like **[Chums](https://github.com/lcoutodemos/chums)** for private audio and telemetry pipelines across personal devices.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Social-Networking-Peer-Collaboration&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Social-Networking-Peer-Collaboration&type=date&legend=top-left)
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Social-Networking-Peer-Collaboration&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Social-Networking-Peer-Collaboration&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you so much for exploring this curated repository! If you find this directory valuable for your projects, architecture research, or open-source journey, please consider supporting the project:
+
+- ⭐ **Star** this repository to help other builders discover it.
+- 🍴 **Fork & Contribute** to expand coverage across emerging federated tools and protocols.
+- 📢 **Share** with your network, engineering colleagues, and community builders.
+- ☕ **Buy me a coffee**: If you'd like to back ongoing maintenance and curation of open-source resources, please consider sponsoring via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
 
 ---
 
