@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="50%" stop-color="#a78bfa" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+
+    <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Node Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulse-slow {
+      0%, 100% { transform: scale(1); opacity: 0.85; }
+      50% { transform: scale(1.08); opacity: 1; }
+    }
+    @keyframes float-p2p {
+      0% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(-10px) translateX(6px); }
+      100% { transform: translateY(0px) translateX(0px); }
+    }
+    @keyframes dash {
+      to { stroke-dashoffset: -80; }
+    }
+    .floating-node {
+      animation: float-p2p 6s ease-in-out infinite;
+    }
+    .pulsing-halo {
+      transform-origin: center;
+      animation: pulse-slow 4s ease-in-out infinite;
+    }
+    .mesh-line {
+      stroke-dasharray: 6 6;
+      animation: dash 20s linear infinite;
+    }
+    .badge-card {
+      backdrop-filter: blur(8px);
+      fill: #1f2937;
+      fill-opacity: 0.75;
+      stroke: #374151;
+      stroke-width: 1.5;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" fill="url(#bg-grad)" rx="16" />
+
+  <!-- Dynamic Network Grid / Peer Graph Background (Layer 0) -->
+  <g opacity="0.35">
+    <circle cx="600" cy="180" r="280" fill="none" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4 8" opacity="0.4" />
+    <circle cx="600" cy="180" r="380" fill="none" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="6 10" opacity="0.25" />
+    <line x1="100" y1="60" x2="320" y2="120" stroke="url(#line-grad)" stroke-width="1.5" class="mesh-line" />
+    <line x1="320" y1="120" x2="240" y2="280" stroke="url(#line-grad)" stroke-width="1.5" class="mesh-line" />
+    <line x1="240" y1="280" x2="100" y2="60" stroke="url(#line-grad)" stroke-width="1.5" class="mesh-line" />
+    <line x1="900" y1="80" x2="1100" y2="120" stroke="url(#line-grad)" stroke-width="1.5" class="mesh-line" />
+    <line x1="1100" y1="120" x2="980" y2="300" stroke="url(#line-grad)" stroke-width="1.5" class="mesh-line" />
+    <line x1="980" y1="300" x2="900" y2="80" stroke="url(#line-grad)" stroke-width="1.5" class="mesh-line" />
+  </g>
+
+  <!-- Ambient Dynamic Floating Peer Nodes in Background -->
+  <g class="floating-node" opacity="0.8">
+    <circle cx="160" cy="90" r="16" fill="#3b82f6" filter="url(#glow)" opacity="0.7" />
+    <circle cx="160" cy="90" r="6" fill="#ffffff" />
+    <circle cx="260" cy="270" r="20" fill="#8b5cf6" filter="url(#glow)" opacity="0.6" />
+    <circle cx="260" cy="270" r="7" fill="#ffffff" />
+    <circle cx="1060" cy="100" r="18" fill="#ec4899" filter="url(#glow)" opacity="0.7" />
+    <circle cx="1060" cy="100" r="6" fill="#ffffff" />
+    <circle cx="960" cy="280" r="22" fill="#6366f1" filter="url(#glow)" opacity="0.6" />
+    <circle cx="960" cy="280" r="8" fill="#ffffff" />
+  </g>
+
+  <!-- Central Foreground Content (Kept Crystal Clear and Unhidden) -->
+  <g id="foreground-content" transform="translate(600, 140)">
+    <!-- Main Title Header -->
+    <text x="0" y="0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="44" fill="url(#text-grad)" filter="url(#shadow)" letter-spacing="-0.5">
+      SOCIAL NETWORKING &amp; PEER COLLABORATION
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="42" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="500" font-size="18" fill="#9ca3af" letter-spacing="0.2">
+      Curated Ecosystem of Federated Communities, Real-Time Team Chat, ActivityPub &amp; P2P Hubs
+    </text>
+
+    <!-- Tech Pillars Badges / Foreground Pills -->
+    <g transform="translate(0, 95)">
+      <!-- Pill 1: ActivityPub / Fediverse -->
+      <g transform="translate(-360, 0)">
+        <rect x="-70" y="-18" width="140" height="36" rx="18" class="badge-card" />
+        <circle cx="-50" cy="0" r="5" fill="#a78bfa" />
+        <text x="5" y="5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#e5e7eb">🌐 ActivityPub</text>
+      </g>
+
+      <!-- Pill 2: Matrix Protocol -->
+      <g transform="translate(-180, 0)">
+        <rect x="-70" y="-18" width="140" height="36" rx="18" class="badge-card" />
+        <circle cx="-50" cy="0" r="5" fill="#34d399" />
+        <text x="5" y="5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#e5e7eb">🔒 Matrix &amp; P2P</text>
+      </g>
+
+      <!-- Pill 3: Real-Time Team Chat -->
+      <g transform="translate(0, 0)">
+        <rect x="-75" y="-18" width="150" height="36" rx="18" class="badge-card" />
+        <circle cx="-55" cy="0" r="5" fill="#60a5fa" />
+        <text x="6" y="5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#e5e7eb">💬 Team Chat</text>
+      </g>
+
+      <!-- Pill 4: Community Forums -->
+      <g transform="translate(180, 0)">
+        <rect x="-70" y="-18" width="140" height="36" rx="18" class="badge-card" />
+        <circle cx="-50" cy="0" r="5" fill="#f59e0b" />
+        <text x="5" y="5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#e5e7eb">🏛️ Forums</text>
+      </g>
+
+      <!-- Pill 5: AI & Wearable Companions -->
+      <g transform="translate(360, 0)">
+        <rect x="-75" y="-18" width="150" height="36" rx="18" class="badge-card" />
+        <circle cx="-55" cy="0" r="5" fill="#ec4899" />
+        <text x="6" y="5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#e5e7eb">⌚ AI Companions</text>
+      </g>
+    </g>
+  </g>
+</svg>
