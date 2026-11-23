@@ -62,7 +62,7 @@ The table below catalogs premier hosted community, team collaboration, and socia
 
 ## 💻 Open-Source GitHub Projects
 
-Curated open-source software, self-hostable Discord/Slack alternatives, federated social networks, and peer-to-peer hubs. **Sorted descending by verified GitHub Stars_Count.**
+Curated open-source software, self-hostable Discord/Slack alternatives, federated social networks, and peer-to-peer hubs. **Sorted descending by verified GitHub_Stars_Count.**
 
 | Project | GitHub_Stars | Focus & Description | Protocol / Stack |
 | :--- | :---: | :--- | :--- |
