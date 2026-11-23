@@ -62,9 +62,9 @@ The table below catalogs premier hosted community, team collaboration, and socia
 
 ## 💻 Open-Source GitHub Projects
 
-Curated open-source software, self-hostable Discord/Slack alternatives, federated social networks, and peer-to-peer hubs. **Sorted descending by verified GitHub Star count.**
+Curated open-source software, self-hostable Discord/Slack alternatives, federated social networks, and peer-to-peer hubs. **Sorted descending by verified GitHub Stars_Count.**
 
-| Project | Stars | Focus & Description | Protocol / Stack |
+| Project | GitHub_Stars | Focus & Description | Protocol / Stack |
 | :--- | :---: | :--- | :--- |
 | **[Syncthing](https://github.com/syncthing/syncthing)** | [![Stars](https://img.shields.io/github/stars/syncthing/syncthing?style=social&color=white)](https://github.com/syncthing/syncthing/stargazers) | Open-source continuous peer-to-peer file synchronization and collaboration engine. | Go / P2P Block Exchange |
 | **[Mastodon](https://github.com/mastodon/mastodon)** | [![Stars](https://img.shields.io/github/stars/mastodon/mastodon?style=social&color=white)](https://github.com/mastodon/mastodon/stargazers) | Decentralized, federated microblogging platform implementing the W3C ActivityPub protocol. | Ruby on Rails / ActivityPub |
@@ -139,7 +139,7 @@ Contributions are warmly encouraged! Follow these steps to submit additions or u
 3. Provide:
    - Official platform or repository name.
    - Valid link to the site or GitHub repository.
-   - Specific pricing/limits (for SaaS) or accurate star badge (for Open-Source).
+   - Specific pricing/limits (for SaaS) or accurate Stars_Badge (for Open-Source).
 4. Submit a **Pull Request** with a clear explanation of the addition. 📬
 
 ---
